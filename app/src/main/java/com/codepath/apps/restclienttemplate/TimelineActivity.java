@@ -45,12 +45,12 @@ public class TimelineActivity extends AppCompatActivity {
         rvTweets.setLayoutManager(new LinearLayoutManager(this));
         rvTweets.setAdapter(adapter);
 
-        pupulateHomeTimeLine();
+        populateHomeTimeLine();
 
 
     }
 
-    private void pupulateHomeTimeLine() {
+    private void populateHomeTimeLine() {
         client.getHomeTimeline(new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json) {

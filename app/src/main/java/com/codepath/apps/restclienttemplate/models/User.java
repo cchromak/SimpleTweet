@@ -13,7 +13,7 @@ public class User {
         User user = new User();
         user.name = jsonObject.getString("name");
         user.screeName = jsonObject.getString("screen_name");
-        user.publicImageUrl = jsonObject.getString("proflie_img_url_https");
+        user.publicImageUrl = jsonObject.getString("profile_image_url_https");
         return user;
     }
 }

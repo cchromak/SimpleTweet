@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivProfileImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -22,7 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
-        android:layout_toEndOf="@+id/imageView"
+        android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="Chris Chromak" />
 
     <TextView
@@ -33,6 +34,6 @@
 
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/imageView"
+        android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="ok wow this is the future!!!" />
 </RelativeLayout>

@@ -50,4 +50,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
     implementation 'com.facebook.stetho:stetho:1.5.1'
+    // Added for SwipeRefreshLayout which is a ViewGroup that can hold only one scrollable view as a child
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
 }

@@ -11,7 +11,7 @@ android {
         applicationId "com.codepath.apps.restclienttemplate"
         minSdkVersion 21
         targetSdkVersion 28
-
+        vectorDrawables.useSupportLibrary = true
         // Room schemas
         javaCompileOptions {
             annotationProcessorOptions {
@@ -52,5 +52,12 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.5.1'
     // Added for SwipeRefreshLayout which is a ViewGroup that can hold only one scrollable view as a child
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
+    implementation "androidx.vectordrawable:vectordrawable:1.0.0" // VectorDrawableCompat
+    implementation "androidx.vectordrawable:vectordrawable-animated:1.0.0" // AnimatedVectorDrawableCompat
+
+    implementation 'jp.wasabeef:glide-transformations:4.1.0'
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.4'
 
 }

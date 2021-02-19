@@ -15,6 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
+        android:contentDescription="@string/profileImage"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -25,6 +26,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="@color/black"
         tools:text="Chris Chromak" />
 
     <TextView
@@ -37,6 +39,7 @@
         android:layout_toEndOf="@+id/ivProfileImage"
         android:autoLink="all"
         android:linksClickable="true"
+        android:textColor="@color/black"
         tools:text="ok wow this is the future!!!" />
 
     <ImageView
@@ -49,7 +52,8 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="9dp"
-        android:background="@drawable/ic_vector_heart_stroke" />
+        android:background="@drawable/ic_vector_heart_stroke"
+        android:contentDescription="@string/heart" />
 
     <ImageView
         android:id="@+id/ivRetweet"
@@ -63,6 +67,7 @@
 
         android:layout_toEndOf="@+id/ivReply"
         android:background="@drawable/ic_vector_retweet_stroke"
+        android:contentDescription="@string/retweet"
         android:visibility="visible" />
 
     <ImageView
@@ -73,5 +78,16 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         android:layout_toEndOf="@+id/ivRetweet"
-        android:background="@drawable/ic_vector_heart_stroke" />
+        android:background="@drawable/ic_vector_heart_stroke"
+        android:contentDescription="@string/heart" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/tvScreenName" />
+
 </RelativeLayout>

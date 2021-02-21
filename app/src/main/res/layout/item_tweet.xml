@@ -52,7 +52,7 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="9dp"
-        android:background="@drawable/ic_vector_heart_stroke"
+        android:background="@drawable/ic_baseline_reply"
         android:contentDescription="@string/heart" />
 
     <ImageView

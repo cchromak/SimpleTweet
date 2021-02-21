@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ivUniqueToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/twitter_blue">
+
+
+    <TextView
+        android:id="@+id/tvBird"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/ic_vector_heart" />
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="271dp"
+        android:layout_toEndOf="@+id/tvBird"
+        android:background="@drawable/ic_vector_search_stroke" />
+</RelativeLayout>

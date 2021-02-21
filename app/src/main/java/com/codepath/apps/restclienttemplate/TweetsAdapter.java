@@ -71,6 +71,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         TextView tvBody;
         TextView tvScreenName;
         TextView tvName;
+        TextView tvCreatedAt;
 
         // the itemView is a representation of one tweet
         public ViewHolder(@NonNull View itemView) {
@@ -80,6 +81,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
             tvName = itemView.findViewById(R.id.tvName);
+            tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt);
         }
 
         public void bind(Tweet tweet) {
@@ -87,6 +89,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvScreenName.setText(tweet.user.name);
             String name = "@" + tweet.user.screenName;
             tvName.setText(name);
+            tvCreatedAt.setText(tweet.createdAt);
             Glide.with(context).load(tweet.user.publicImageUrl).transform(new CircleCrop()).into(ivProfileImage);
         }
     }

@@ -9,5 +9,7 @@
     <string name="reply">reply</string>
     <string name="retweet">retweet</string>
     <string name="heart">heart</string>
+    <string name="tweet">Tweet!</string>
+    <string name="tweetHint">What\'s good, fam?</string>
 
 </resources>
